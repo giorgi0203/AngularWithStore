@@ -11,7 +11,5 @@ export class AppComponent {
   todos$;
   constructor(private store: Store<{ count: number }>) {
     this.todos$ = store.pipe(select('app'));
-    console.log(this.todos$);
-    
   }
 }
