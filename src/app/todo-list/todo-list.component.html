@@ -1,0 +1,11 @@
+<div>
+  <ul>
+      <li *ngFor="let item of (todos$ | async).todos" [ngClass]="{'done': item.done}" (click)="markDone(item.id)">
+          <div>
+              <span>{{item.title}}</span>
+              <span>{{item.type}}</span>
+          </div>
+          <span>{{item.description}}</span>
+      </li>
+  </ul>
+</div>

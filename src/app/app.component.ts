@@ -8,8 +8,5 @@ import { Store, select } from '@ngrx/store';
 })
 export class AppComponent {
   title = 'AngularWithStore';
-  todos$;
-  constructor(private store: Store<{ count: number }>) {
-    this.todos$ = store.pipe(select('app'));
-  }
+
 }

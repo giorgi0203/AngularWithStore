@@ -1,0 +1,33 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* background-color: gray; */
+    border: solid gray 1px;
+    cursor: pointer;
+}
+
+li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+li.done {
+    background-color: greenyellow;
+    text-decoration: line-through;
+}
+
+li span {
+    margin-left: 10px;
+    cursor: pointer;
+}
